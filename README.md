@@ -57,16 +57,9 @@ The following metrics are reported for each technique:
 - Accuracy: 0.9218
 
 ## Visualization
-The confusion matrix for the Logistic Regression with Undersampling is shown below:
+Here is the confusion matrix for the Logistic Regression with Undersampling:
 
-```python
-plt.figure(figsize=(8, 6))
-sns.heatmap(confusion_matrix(y_test, y_pred_under), annot=True, fmt='d', cmap='Blues', xticklabels=['Non-Spam', 'Spam'], yticklabels=['Non-Spam', 'Spam'])
-plt.title('Confusion Matrix')
-plt.xlabel('Predicted')
-plt.ylabel('Actual')
-plt.show()
-```
+![Confusion Matrix](images/confusion_matrix.png)
 
 ## Conclusion
 This project demonstrates effective techniques for managing imbalanced datasets, improving model performance through oversampling, undersampling, and weighted logistic regression. Further exploration could include other advanced techniques such as SMOTE or ensemble methods.
